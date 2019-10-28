@@ -1,10 +1,11 @@
+#!/usr/bin/env node
 const fs = require('fs');
 const babelWriter = require('./helper-functions/babel-writer');
+const packageJsonWriter = require('./helper-functions/package-json-writer');
 const dependenciesInstaller = require('./helper-functions/dependencies-installer');
 const devDependenciesInstaller = require('./helper-functions/dev-dependencies-installer');
 const eslintWriter = require('./helper-functions/eslint-writer');
 const gitignoreWriter = require('./helper-functions/gitignore-writer');
-const packageJsonWriter = require('./helper-functions/package-json-writer');
 const srcIndexWriter = require('./helper-functions/src-index-writer');
 const travisWriter = require('./helper-functions/travis-writer');
 const webpackWriter = require('./helper-functions/webpack-writer');
