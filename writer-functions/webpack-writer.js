@@ -1,7 +1,6 @@
 const { write } = require('./writer');
 
-const str = `
-const HtmlPlugin = require('html-webpack-plugin');
+const str = `const HtmlPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
