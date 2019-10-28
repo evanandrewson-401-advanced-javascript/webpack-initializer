@@ -8,6 +8,4 @@ const travisWriter = path => {
   write(str, path);
 };
 
-travisWriter('./test-travis.js')
-
 module.exports = travisWriter;

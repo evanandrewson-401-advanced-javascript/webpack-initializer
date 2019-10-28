@@ -15,6 +15,8 @@ if(path !== '.') {
   fs.mkdirSync(path);
 }
 
+fs.mkdirSync(`${path}/src`);
+
 babelWriter(`${path}/.babelrc`);
 dependenciesInstaller(`${path}`);
 devDependenciesInstaller(`${path}`);
@@ -23,4 +25,4 @@ gitignoreWriter(`${path}/.gitignore`);
 packageJsonWriter(`${path}/package.json`);
 srcIndexWriter(`${path}/src/index.js`, `${path}/src/index.html`);
 travisWriter(`${path}/.travis.yml`);
-webpackWriter(`${path}/src/webpack.config.js`);
+webpackWriter(`${path}webpack.config.js`);

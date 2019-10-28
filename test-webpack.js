@@ -1,6 +1,4 @@
-const { write } = require('./writer');
-
-const str = `const HtmlPlugin = require('html-webpack-plugin');
+const HtmlPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
@@ -18,7 +16,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -28,7 +26,7 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
+        test: /.css$/,
         use: [
           {
             loader: 'style-loader',
@@ -55,7 +53,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(jpeg|jpg|png|svg)$/,
+        test: /.(jpeg|jpg|png|svg)$/,
         use: {
           loader: 'url-loader',
           options: { limit: 1000 },
@@ -64,10 +62,3 @@ module.exports = {
     ]
   }
 };
-`;
-
-const webpackWriter = path => {
-  write(str, path);
-};
-
-module.exports = webpackWriter;
