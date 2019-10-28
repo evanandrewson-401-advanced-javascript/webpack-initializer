@@ -67,6 +67,4 @@ const packageJsonWriter = path => {
   writeJson(json, path);
 };
 
-packageJsonWriter('./test.json');
-
 module.exports = packageJsonWriter;
