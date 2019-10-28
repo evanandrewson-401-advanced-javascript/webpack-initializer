@@ -27,7 +27,8 @@
   "dependencies": {
     "file-system": "^2.2.2",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.11.0",
+    "superagent": "^5.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
