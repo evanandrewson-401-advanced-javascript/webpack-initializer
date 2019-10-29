@@ -1,6 +1,6 @@
 {
   "name": "create-evan-react-initializer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "src/index.js",
   "jest": {
@@ -27,8 +27,6 @@
   "dependencies": {
     "@types/jest": "^24.0.20",
     "file-system": "^2.2.2",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
     "superagent": "^5.1.0"
   },
   "devDependencies": {

@@ -19,11 +19,11 @@ if(path !== '.') {
 fs.mkdirSync(`${path}/src`);
 
 babelWriter(`${path}/.babelrc`);
+packageJsonWriter(`${path}/package.json`);
 dependenciesInstaller(`${path}`);
 devDependenciesInstaller(`${path}`);
 eslintWriter(`${path}/.eslintrc`);
 gitignoreWriter(`${path}/.gitignore`);
-packageJsonWriter(`${path}/package.json`);
 srcIndexWriter(`${path}/src/index.js`, `${path}/src/index.html`);
 travisWriter(`${path}/.travis.yml`);
 webpackWriter(`${path}webpack.config.js`);
