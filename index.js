@@ -26,4 +26,4 @@ eslintWriter(`${path}/.eslintrc`);
 gitignoreWriter(`${path}/.gitignore`);
 srcIndexWriter(`${path}/src/index.js`, `${path}/src/index.html`);
 travisWriter(`${path}/.travis.yml`);
-webpackWriter(`${path}webpack.config.js`);
+webpackWriter(`${path}/webpack.config.js`);
