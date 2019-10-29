@@ -6,7 +6,7 @@ const installer = (path, packagesArray, devBoolean) => {
   }
   console.log('beginning install');
   packagesArray.forEach(entry => {
-    execSync(`npm i ${entry}`, {
+    execSync(`${command} ${entry}`, {
       cwd: path,
       stdio: 'inherit'
     });
