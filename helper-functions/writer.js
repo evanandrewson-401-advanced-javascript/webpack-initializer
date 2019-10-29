@@ -9,7 +9,7 @@ const write = (str, path) => {
 };
 
 const writeJson = (obj, path) => {
-  fs.writeFileSync(path, JSON.stringify(obj), err => {
+  fs.writeFileSync(path, JSON.stringify(obj, null, 2), err => {
     if(err) throw err;
     console.log(`${path} written`);
   });
