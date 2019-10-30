@@ -32,7 +32,6 @@ module.exports = {
         use: [
           {
             loader: 'style-loader',
-            options: { sourceMap: true }
           },
           {
             loader: 'css-loader',
