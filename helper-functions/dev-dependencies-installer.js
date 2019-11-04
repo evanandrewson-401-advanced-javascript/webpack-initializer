@@ -14,6 +14,7 @@ const devDependenciesInstaller = path => {
     'css-loader',
     'eslint',
     'eslint-plugin-babel',
+    'eslint-plugin-react',
     'file-loader',
     'html-webpack-plugin',
     'jest',
